@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Funkoshop</title>
+    <link rel="icon" href="#" type="image/png" />
+</head>
+
+<body>
+    <header class="header_container">
+        
+        <div class="logo">
+            <a href="#" id="logo_nav"><img src="../img/branding/logo_light_horizontal.svg" alt="logo"></a>
+        </div>
+
+        <div class="group">
+            <ul>
+                <!--<li class="dropdown"><a href="#"  id="#">SHOP</a>
+                <ul class="">
+                    <li><a href="#" >Opcion 1</a></li>
+                    <li><a href="#" >Opcion 2</a></li>
+                    <li><a href="#" >Opcion 3</a></li>
+                </ul>
+                </li>
+                <li><a href="#" target="_blank" id="#">CONTACTO</a></li>-->
+                <li><a href="#" target="_blank" id="#">LOGIN</a></li>
+                <!--<li><a href="#" target="_blank" id="#"><img src="img/icons/cart-icon.svg" alt="carrito"></a></li>-->
+            </ul>
+        </div>      
+    </header>
+
+    <div>
+        <form action="procesar_login.php" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Iniciar sesión">
+          </form>
+          
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container_footer">
+            <div class="footer_links">
+                <ul>
+                    <li><a href="pages/shop.html" target="_blank" id="#">SHOP</a></li>
+                    <li><a href="#" target="_blank" id="#">REGISTRARSE</a></li>
+                    <li><a href="#" target="_blank" id="#">INGRESAR</a></li>
+                    <li><a href="#" target="_blank" id="#">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="../img/branding/isotype.svg" alt="logo">
+            </div>
+        </div>
+
+        <div class="footer_legal">
+            <p>All rights reserved 2022 - Funkoshop &copy;</p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+<script src="../js/validacion_login.js"></script>
+
+</html>

@@ -1,0 +1,577 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header_container {
+    background-color: #30343F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a img {
+    display: flex;
+    max-width: 75%;
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 13%;
+    margin-bottom: 5%;
+  }
+
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+
+header .group ul {
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+  }
+  
+  header .group ul li {
+    list-style: none;
+    padding-right: 3em;
+  }
+  
+  header .group ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #f5f5f5;
+ 
+  }
+
+  .group  ul li a img {
+    width: 80%;
+    height: 80%;
+}
+  
+  /*header ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: rgb(20, 1, 32, 0.644);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+  }*/
+  
+  /*header ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }*/
+  
+  .banner {
+    background-image: url(/img/funkos-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+
+  .banner_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7.5%;
+    padding-top: 7.5%;
+  }
+
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3em;
+    color: #f5f5f5;
+    margin-bottom: 1px;
+    
+  }
+
+  .banner_text p {
+    font-size: "Raleway", sans-serif;
+    font-size: 1em;
+    color:#f5f5f5;
+    margin-bottom: 50px;
+  }
+
+  .shopButton button {
+    border-radius: 70px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    width: 12em;
+    height: 2em;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 7em;
+  }
+
+/*---MARVEL SECTION-----*/
+  .section_marvel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    padding-left: 2%;
+  }
+
+  .marvel_text {
+    font-family: "Raleway", sans;
+    font-size: 1.7em;
+    color: #111111;
+    font-style: medium;  
+    vertical-align: top;
+  }
+
+  .marvel_text p {
+    font-size: .7em;
+  }
+
+  .marvel_photo img {
+    width: 75%;
+    height: 150%;
+    margin-left: 6em;
+  }
+
+  .linea1 {
+    border: 1px solid #FF3333;
+    border-radius: 1em;
+    width: 160%;
+    
+  }
+
+  .buttonCollection button {
+    border-radius: 70px;
+    display: inline-block;   
+    text-decoration: none;
+    width: 16em;
+    height: 3em;
+    font-size: 16px;
+    margin-bottom: 7em;
+    background-color:#30343F;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+  }
+  /*----FIN MARVEL SECTION ----*/
+
+
+
+  /*------POKEMON SECTION ----*/
+  .section_pokemon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pokemon_text {
+    font-family: "Raleway", sans;
+    font-size: 1.7em;
+    color: #111111;
+    font-style: medium;   
+    vertical-align: top;
+    padding-right: 6em;
+    
+  }
+
+  .pokemon_text p {
+    font-size: .7em;
+    padding-right: 6em;
+  }
+
+  .pokemon_photo img {
+    width: 90%;
+    height: 140%;  
+    padding-left: 6em;
+    padding-right: 0;
+  }
+
+  .linea2 {
+    border: 1px solid #FF3333;
+    border-radius: 1em;
+    width: 120%;
+  }
+
+  .buttonCollection button {
+    border-radius: 70px;
+    display: inline-block; 
+    width: 16em;
+    height: 3em;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-bottom: 7em;
+    background-color:#30343F;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+  }
+  /*-----FIN POKEMON SECTION-----*/
+
+
+  /*-----HARRY POTTER SECTIONS-----*/
+  .section_harrypotter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    padding-left: 2%;
+  }
+
+  .harrypotter_text {
+    font-family: "Raleway", sans;
+    font-size: 1.7em;
+    color: #111111;
+    font-style: medium;
+    margin-bottom: 0.5em; 
+    vertical-align: top;
+  }
+
+  .harrypotter_text p {
+    font-size: .7em;
+    
+  }
+
+  .harrypotter_photo img {
+    width: 85%;
+    height: 170%;
+    padding-left: 3em;
+    
+  }
+
+  .linea3 {
+    border: 1px solid #FF3333;
+    border-radius: 1em;
+    width: 130%;
+    
+  }
+
+  .buttonCollection button {
+    border-radius: 70px;
+    display: inline-block;
+    width: 16em;
+    height: 3em;
+    font-size: 16px;
+    margin-bottom: 7em;
+    background-color:#30343F;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+  }
+
+/*---NEWS SECTIONS---*/
+.news h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color: #111111;
+  padding-left: 7.5%;
+}
+
+.container_news {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+
+
+#card img {
+  width: 90%;
+  height: 130%;
+}
+
+.modo-v {
+  display: flex;
+  background-color:#FF3333;
+  width: fit-content;
+  color: #FFFFFF;
+  font-size: .8em;
+  padding: 0.4em 1em 0.4em 1em;
+  float: right;  
+}
+
+.descriptions {
+  margin-left: 3.5em;
+}
+
+.description-1 {
+  font-family: "Inter", sans-serif;
+  font-size: 0.7em;
+  font-weight: 500;
+  
+}
+
+.description-2 {
+  font-family: "Inter", sans-serif;
+  
+}
+
+.description-3 {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  
+}
+
+.description-4 {
+  color: #1D84B5;
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  
+}
+
+
+/*----FOOTER------*/
+footer {
+  background-color: #30343F;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+  
+  
+}
+
+.container_footer img {
+  display: flex;
+  width: 80%;
+  height: 50%;
+
+}
+
+.footer_links {
+  display: flex;
+
+}
+
+.footer_links ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  
+}
+
+.footer_links ul li {
+  list-style: none; 
+  margin-bottom: 10px; 
+  
+}
+
+.footer_links ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1em;
+  color: #f5f5f5;
+  align-content: space-evenly;
+}
+
+
+.footer_legal p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  margin-bottom: 0;
+  color:#f5f5f5;
+}
+
+/*-------------------------------fin HOME-------------------------*/
+
+
+
+
+
+/*-----------------------SHOP--------------------------------*/
+aside {
+  width: 25%;
+  margin-right: 3rem;
+  padding-top: 1rem;
+  padding-left: 3rem;
+
+}
+
+.container {
+  display: flex;
+  
+  
+
+}
+
+aside div h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.filter {
+  list-style: none;
+
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid #111111;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+
+}
+
+input[type="checkbox"]:checked {
+  background-color: #111111;
+}
+
+ul.filter {
+  padding-left: .5em;
+}
+
+label {
+  font-size: .9em;
+  
+}
+
+
+
+/*----------------------fin SHOP----------------------------------*/
+
+
+
+
+/*-------------------------ITEM-----------------------------------*/
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 7em;
+}
+
+.item img {
+  width: 40%;
+  height: auto;
+  margin-right: 2em;
+}
+
+.item_descriptions {
+  margin-left: 10px;
+}
+
+.item_descriptions h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.item_description1 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color:#333333;
+}
+
+.item_description2 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.item_description3 {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.item_description4 {
+  font-family: "Inter", sans-serif;
+  font-size: .7em;
+  color:#1D84B5;
+  font-weight: 700;
+}
+
+
+.items_relacionados h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  color: #111111;
+  padding-left: 7.5%;
+}
+
+
+
+.addToCart_container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 0.5em;
+  width: 100%;
+}
+
+.menos {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  background-color:#4F4F4F;
+  color: #f5f5f5;
+  
+
+}
+
+.mas {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color:#4F4F4F;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+.cant_items {
+  background-color: #FFFFFF;
+  color: #C9C9C9;
+  font-size: .3em;
+  box-sizing: border-box;
+  border: 0;
+  background: 50%;
+  
+}
+
+.agregar {
+  background-color: #FF3333;
+  color:#f5f5f5 ;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-size: .9em;
+  padding: 0.2em .6em 0.2em .6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
