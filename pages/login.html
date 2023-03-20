@@ -36,35 +36,36 @@
                 </ul>
                 </li>
                 <li><a href="#" target="_blank" id="#">CONTACTO</a></li>-->
-                <li><a href="#" target="_blank" id="#">LOGIN</a></li>
+                <li><a href="#" target="_blank" id="salir">SALIR</a></li>
                 <!--<li><a href="#" target="_blank" id="#"><img src="img/icons/cart-icon.svg" alt="carrito"></a></li>-->
             </ul>
         </div>      
     </header>
 
-    <div>
-        <form action="procesar_login.php" method="post">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Iniciar sesión">
-          </form>
-          
+    
+
+    <div class="form_login">
+        <h1>INGRESAR A MI CUENTA</h1>
+        <form class="login">
+            <div id="label1">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abcdef@correo.com" required>
+            </div>
+            <br>
+            <div id="label2">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="" required>
+            </div>
+            <br>
+            <div id="ingreso">
+                <button onclick="window.location.href='#'" type="submit" id="ingresar">Ingresar</button>
+                <label><input type="checkbox" id="checkbox" name="checkbox">Recordarme</label>
+            </div>
+            <div class="recuperar_contraseña">
+                <a href="#">Olvidé mi contraseña</a>
+            </div>    
+        </form>        
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -83,17 +84,21 @@
                 <img src="../img/branding/isotype.svg" alt="logo">
             </div>
         </div>
-
         <div class="footer_legal">
             <p>All rights reserved 2022 - Funkoshop &copy;</p>
         </div>
-
     </footer>
 
+    <!---SCRIPTS--->
+    <script>
+        const boton = document.querySelector('#ingresar');
+
+        boton.addEventListener('click', function() {
+        // Código que se ejecutará cuando se haga clic en el botón
+        window.location.href = '#';
+        });
+    </script>
 
 
 </body>
-
-<script src="../js/validacion_login.js"></script>
-
 </html>
