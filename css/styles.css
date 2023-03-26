@@ -526,7 +526,7 @@ label {
   margin-right: 5px;
   list-style: none;
   border-radius: 5px;
-  background-color: #C4CDD5;
+  
   border-radius: 4px;
 
   ;
@@ -729,37 +729,48 @@ label {
 
 .form_login h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  color: #5f3535;
+  font-size: 2.5em;
+  color:#1F1F1F;
   font-weight: 700;
   padding-top: 1em;
   padding-bottom: 1em;
 
 }
 
-#label1, #label2 {
+#label1_login , #label2_login {
   display: flex;
   align-items: center;
   padding-bottom: 1em;
+  
+  
 }
 
-#label1 label, #label2 label {
+#label1_login label, #label2_login label {
   flex: 1;
   text-align: left;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 1em; 
+  
+  font-size: 1.3em; 
   margin-right: 2em;
 
 }
 
-#label1 input, #label2 input {
-  flex: 1;
+#label1_login input[type="email"], #label2_login input[type="password"] {
+  
   text-align: right;
   border: none;
   border-bottom: 2px solid #FF3333;
   background-color: transparent;
-  padding: 2px;
+  padding: 1px;
+  width: 65%;
+  
+}
+
+
+input[type="password"] {
+  color: #E0E0E0;
+  font-size: 2em;
+  letter-spacing: 4px;
 }
 
 
@@ -773,11 +784,17 @@ label {
   border-style: none;
   padding: 1em 2.7em 1em 2.7em;
   cursor: pointer;
+  margin-right: 1.7em;
+}
+
+#ingreso #checkbox {
+  margin-left: 1.7em;
 }
 
 #ingreso {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -806,7 +823,7 @@ label {
 
 #ingreso label {
   font-family: "Inter", sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 400;
   color: #1f1f1f;
 }
@@ -816,6 +833,8 @@ label {
 .form_registro {
   display: grid;
   place-items: center;  
+  background-color:#FFFFFF;
+  ;
 }
 
 .form_registro h1 {
@@ -825,6 +844,7 @@ label {
   font-weight: 700;
   padding-top: 1em;
   padding-bottom: .3em;
+  letter-spacing: 0.04em;
 }
 
 .form_registro h2 {
@@ -834,12 +854,15 @@ label {
   font-weight: 700;
   padding-top: .3em;
   padding-bottom: 1em;
+  letter-spacing: 0.04em;
 }
 
 #label1, #label2, #label3, #label4, #label5 {
   display: flex;
   align-items: center;
-  padding-bottom: 1em;
+  padding-right: 1.5em;
+  
+
 }
 
 #label1 label, #label2 label, #label3 label, #label4 label, #label5 label {
@@ -847,22 +870,64 @@ label {
   text-align: left;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1em; 
+  font-size: 1.2em;
   margin-right: 2em;
+  
+  
+}
+
+#label5 label {
+  white-space: nowrap;
 }
 
 #label1 input, #label2 input, #label3 input, #label4 input, #label5 input {
-  flex: 1;
+  font-size: 1em;
   text-align: right;
   border: none;
   border-bottom: 2px solid #FF3333;
   background-color: transparent;
-  padding: 2px;
+  
+  width: 200px;
+}
+
+#label4 input[type="password"], #label5 input[type="password"] {
+  color: #E0E0E0;
+  letter-spacing: 4px;
+  
+
+}
+
+#label4 input::placeholder, #label5 input::placeholder {
+  font-size: 1em;
 }
 
 #registro {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+  
+}
+
+
+
+#registro button {
+  background-color: #FF3333;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-size: .8em;
+  font-weight: 400;
+  border-style: none;
+  padding: 1em 2.7em 1em 2.7em;
+  cursor: pointer;
+  margin-right: 3em;
+  
+  
+}
+
+#registro label, #registro a #registro_legales {
+  font-family: "Inter", sans-serif;
+  font-size: .9em;
+  margin-top: .5em;
 }
 
 #registro_legales a {
@@ -877,28 +942,38 @@ label {
 
 
 /*------------------ADMIN------------------------*/
-#searcher {
+#search-form {
   display: flex;
-  /*justify-content: center;*/
-  padding: 0.3em .9em;
+  flex-direction: row;
+  margin-left: 9em;
+  
 }
 
-#searcher img {
-  margin-left: 3em;
-  margin-right: 1em;
-  width: 2.5%;
-  height: 2.5%;
+.search-form {
+  display: flex;
+  flex-direction: row;
 
+   
 }
 
-#searcher input {
+
+.search-form input[type="image"] {
+  padding: .7em;
+  border: none;
+  width: 3.7em;
+  height: auto;
+  margin-top: .9em;
+}
+
+.search-form input[type="text"] {
   font-family: "Inter", sans-serif;
   font-size: 1em;
-  font-weight: 500;
-  border-color: #30343F;
+  margin-top: 1.5em;
   border: 2px solid #30343F;
-  background-color: #f5f5f5;
-  padding: .5em 5em;  
+  border-radius: 6px;
+  width: 30em;
+  height: 1.8em;
+
 }
 
 
@@ -907,6 +982,8 @@ label {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: .2em 1em .2em 1em;
+  
 
 }
 
@@ -916,21 +993,48 @@ label {
   font-weight: 700;
   font-style: bolder;
   color:#1F1F1F;
+  
 }
 
-.tabla p {
+.agregar-producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 7em;
+  
+  
+}
+
+.agregar-producto p {
   font-family: "Inter", sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   font-weight: 700;
   font-style: bolder;
   color:#1F1F1F;
+  margin-top: 3.5em;
+  margin-left: 5.5em;
+  margin-right: 4.2em;
+ 
 }
 
+.agregar-producto a img {
+  padding: 0;
+  margin-top: 3em;
+  margin-left: 2.5em;
+  width: 45%;
+  height: auto;
+  
+}
+
+
 table {
+  border-collapse: separate;
+  border-spacing: 7em 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
 }
+
 
 
 #titulos_columnas {
@@ -939,33 +1043,191 @@ table {
   font-weight: 700;
   color:#1f1f1f;
   font-style: bolder;
-  padding: 0.4em 1em 0.4em 1.4em;
+  
+ 
+}
+
+#titulos_columnas th {
+  text-align: left; 
+  padding-bottom: 1.5em;
 }
 
 #detalle_productos {
   font-family: "Inter", sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   font-weight: 500;
   color:#1F1F1F;
   letter-spacing: 2%;
-  font-style: bolder;
+  font-style: normal;
 
 }
 
 
+/*-----------CREATE--------*/
+
+body {
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.container_create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3em;
+  
+}
+
+.container_create h1 {
+  font-family: "Raleway", "sans-serif";
+  font-size: 2.1em;
+  color: #1F1F1F;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 1em;
+  
+ 
+}
+
+.form-group .form-categoria, .form-group .form-licencia  {
+  display: inline-block;
+  font-family: "Inter", "sans-serif";
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #000000;
+
+}
+
+.seleccionar {
+  font-size: .8em;
+  padding: 8px 12px;
+  border: 2px solid #30343F; 
+  border-radius: 4px;
+  background-color: #fff;
+  color: #B9B9B9;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 1em;
+ 
+
+}
+
+.seleccionar option[disabled] {
+  color: #fff;
+}
+
+.seleccionar option[selected] {
+  display: none;
+}
+
+.form-nombre-producto {
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 1em;
+}
+
+.form-nombre-producto input[type="text"] {
+  text-align: right;
+  border: none;
+  border-bottom: 2px solid #FF3333;
+  background-color: transparent;
+  padding: 1px;
+  width: 25%;
+}
+
+.form-nombre-producto div #descripcionProducto {
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: .7em;
+  color: #B9B9B9;
+  letter-spacing: 0.04em;
+  border: 1px solid #1F1F1F;
+  border-radius: 4px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+}
+
+.form-sku-precio-stock {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+.form-sku, .form-precio, .form-stock {
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 1em;
+
+}
+
+.form-sku #sku, .form-precio #precio, .form-stock #stock {
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid #FF3333;
+  background-color: transparent;
+  padding: 1px;
+  width: 45%;
+}
 
 
+.form-descuento-cuotas {
+  display: flex;
+  flex-direction: row;
+}
 
+.form-descuento {
+  font-family: "Inter", "san-serif";
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #000000;
+  
+  
+}
 
+.form-cuotas {
+  font-family: "Inter", "san-serif";
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #000000;
+  
+}
 
+.form-imagenes {
+  display: flex;
+  flex-direction: row; 
+  
+}
 
+.form-imagenes label {
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #000000;
 
+}
 
+.form-imagenes button[type=submit] {
+  background: rgba(217, 217, 217, 0.63);
+  border: 1px solid rgba(48, 52, 63, 0.7);
+  border-radius: 3px;
+  font-family: "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: .7em;
+  color: #1F1F1F;
+  width: 8%;
+  height: 5%;
 
+}
 
-
-
-
-
-
-
+.form-imagenes p {
+  font-family: "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: .9em;
+  color: #1F1F1F;
+}

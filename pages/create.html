@@ -17,9 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Funkoshop</title>
     <link rel="icon" href="#" type="image/png" />
-</head>
+
+    <!---Bootstrap CSS-->
+    <!--<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/> -->
+
+    
+    </head>
 
 <body>
+
     <header class="header_container">
         <div class="logo">
             <a href="#" id="logo_nav"><img src="../img/branding/logo_light_horizontal.svg" alt="logo"></a>
@@ -27,31 +35,113 @@
 
         <div class="group">
             <ul>
-                <!--<li class="dropdown"><a href="#"  id="#">SHOP</a>
-                <ul class="">
-                    <li><a href="#" >Opcion 1</a></li>
-                    <li><a href="#" >Opcion 2</a></li>
-                    <li><a href="#" >Opcion 3</a></li>
-                </ul>
-                </li>
-                <li><a href="#" target="_blank" id="#">CONTACTO</a></li>-->
-                <li><a href="#" target="_blank" id="salir">SALIR</a></li>
-                <!--<li><a href="#" target="_blank" id="#"><img src="img/icons/cart-icon.svg" alt="carrito"></a></li>-->
+                <li><a href="#" target="_blank" id="salir">SALIR</a></li>      
             </ul>
         </div>      
     </header>
-
-
-
-
-
-
-
-
-
-
     
+    
+    <div class="container_create">
 
+        <div>
+            <div>
+              <h1>CREAR NUEVO ITEM</h1>
+            </div>
+        </div>
+          
+        <div>
+            <div>
+                <div class="form-group">
+                    <div class="form-categoria">
+                        <label for="categoria">Categoría:</label>
+                        <select class="seleccionar" id="categoria">
+                            <option value="" disabled selected>Seleccionar</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form-licencia">
+                        <label for="categoria">Licencia:</label>
+                        <select class="seleccionar" id="licencia">
+                            <option value="" disabled selected>Seleccionar</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div>
+
+            <div class="form-nombre-producto">
+                <label for="nombreProducto">Nombre del producto</label>
+                <input type="text" class="form-control" id="nombreProducto"/>
+                <div>
+                    <textarea class="form-control" id="descripcionProducto" rows="3" placeholder="Descripción del producto"></textarea>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <div class="form-sku-precio-stock">
+            <div class="form-sku">
+                <label for="sku">SKU:</label>
+                <input type="text" class="form-control" id="sku" placeholder="SSK111AB001" />
+            </div>
+
+            <div class="form-precio">
+                <label for="precio">Precio:</label>
+                <input type="text" class="form-control" id="precio"  placeholder="$ 0.000,00"/>
+            </div>
+
+            <div class="form-stock">
+                <label for="stock">Stock:</label>
+                <input type="text" class="form-control" id="stock" placeholder="0"/>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="form-descuento-cuotas">
+                <div class="form-descuento">
+                    <label for="descuento">Descuento:</label>
+                    <input type="number" class="form-control" placeholder="0%" id="descuento"/>
+                </div>
+
+                <div class="form-cuotas">
+                    <label for="categoria">Cuotas:</label>
+                    <select class="form-control" id="cuotas">
+                        <option>3 Cuotas sin interés</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-imagenes">
+            <label>Imágenes</label>
+            <button type="submit" class="btn btn-primary">Elegir archivos</button>
+            <p>No se ha seleccionado ningún archivo</p>
+        </div>
+
+        <div>
+            <button type="submit">Agregar Producto</button>
+            <button type="reset">Limpiar</button> 
+        </div>
+
+    </div>
+
+
+              
     <!--FOOTER-->
     <footer>
         <div class="container_footer">
