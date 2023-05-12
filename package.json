@@ -1,0 +1,23 @@
+{
+  "name": "funkoshop",
+  "version": "1.0.0",
+  "description": "Proyecto de tienda online con desarrollo fullstack en javascript y nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "frontend",
+    "bootstrap",
+    "nodejs",
+    "backend",
+    "expressjs",
+    "mysql"
+  ],
+  "author": "Paula Armengol p.armengol6@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "expressjs": "^1.0.1"
+  }
+}
