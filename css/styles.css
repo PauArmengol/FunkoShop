@@ -1,1221 +1,795 @@
-* {
-    box-sizing: border-box;
+@import url(./mini.css);
+@import url(./desktop.css);
+
+html {
+    min-height: 100vh;
 }
 
-body {
-    background-color: #f5f5f5;
+body{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    font-family: 'Roboto', sans-serif;
 }
 
-.header_container {
+.activar{
+    display: block !important;
+}
+
+.inactive {
+    display: none !important;
+}
+
+/*ESTILOS PARA EL NAV*/
+header {
     background-color: #30343F;
+}
+
+.envoltorioNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+    height: 60px;
+    padding: 20px;
 }
 
-.logo a img {
-    display: flex;
-    max-width: 75%;
-    margin-top: 5%;
-    margin-right: 20%;
-    margin-left: 13%;
-    margin-bottom: 5%;
-  }
-
-
-.group {
-    display: flex;
-    align-items: center;
+.logoNav img{
+    height: 50px; 
 }
 
-
-header .group ul {
-    position: relative;
-    display: flex;
-    margin-top: 5%;
-  }
-  
-  header .group ul li {
-    list-style: none;
-    padding-right: 3em;
-  }
-  
-  header .group ul li a {
-    position: relative;
-    text-decoration: none;
-    font-size: 1em;
-    color: #f5f5f5;
-    font-family: "Raleway", sans-serif;
- 
-  }
-
-  .group  ul li a img {
-    width: 80%;
-    height: 80%;
-}
-  
-  .banner {
-    background-image: url(/img/funkos-banner.webp);
-    background-repeat: no-repeat;
-    background-size: cover; 
-  }
-
-  .banner_text {
+.navLinksUL{
     display: flex;
     flex-direction: column;
-    padding-left: 7.5%;
-    padding-top: 7.5%;
-  }
-
-  h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 3em;
-    color: #f5f5f5;
-    margin-bottom: 1px;
-    text-shadow: 3px 3px 6px #333333;
-    
-  }
-
-  .banner_text p {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.3em;
-    color:#f5f5f5;
-    margin-bottom: 30px;
-    text-shadow: 3px 3px 6px #333333;
-  }
-  
-
-  .shopButton button {
-    border-radius: 70px;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    width: 12em;
-    height: 2em;
-    font-size: 15px;
-    font-weight: bolder;
-    margin-bottom: 7em;
-  }
-
-/*---MARVEL SECTION-----*/
-  .section_marvel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
     align-items: center;
-    margin-top: 5%;
-    padding-left: 2%;
-  }
+    background-color: #30343F;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    margin: 0px;
+    list-style: none;
+    font-size: 2rem;
+    line-height: 6rem;
+    text-align: center;
+    padding: 6rem 0 0 0;
+    z-index: 1;
+}
 
-  .marvel_text {
-    font-family: "Raleway", sans;
-    font-size: 1.7em;
-    color: #111111;
-    font-style: medium;  
-    vertical-align: top;
-  }
-
-  .marvel_text p {
-    font-size: .7em;
-  }
-
-  .marvel_photo img {
-    width: 75%;
-    height: 150%;
-    margin-left: 6em;
-  }
-
-  .linea1 {
-    border: 1px solid #FF3333;
-    border-radius: 1em;
-    width: 160%;
-    
-  }
-
-  .buttonCollection button {
-    border-radius: 70px;
-    display: inline-block;   
+nav li a{
+    padding: 11px;
     text-decoration: none;
-    width: 16em;
-    height: 3em;
-    font-size: 16px;
-    margin-bottom: 7em;
-    background-color:#30343F;
-    color: #FFFFFF;
-    font-family: "Inter", sans-serif;
-  }
-  /*----FIN MARVEL SECTION ----*/
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.logoNavDesktop{
+    display: none;
+}
+
+.iconoCart img {
+    width: 70%;
+    height: auto;
+}
 
 
+/*boton del nav en mobile*/
+.openMenu{
+    border: none;
+    background-color: #30343F;
+    color: white;
+}
+.openMenu img{
+    background-color: #30343F;
+}
 
-  /*------POKEMON SECTION ----*/
-  .section_pokemon {
+.closeMenu {
+    position: absolute;
+    top: 37px;
+    right: 22px;
+    background: #30343f;
+    border: none;;
+}
+
+.menuAbierto{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*ESTILOS PARA LA SECCION DEL BANNER PRINCIPAL*/
+
+.principalBanner{
+    display: inline-block;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/funkos-banner.webp);
+    width: 100%;
+    height: 438px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoBanner{
+    position: absolute;
+    margin-top: 20px;
+    /* margin-top: 30px; 
+    margin-left: 30px; */
+    padding: 20px; 
+    color: white;
+}
+
+.textoBanner h1{
+    font-family: Roboto, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+.textoBanner p {
+    font-family: Roboto, sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px white;
+}
+
+.textoBanner a{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 211px;
+    height: 47px;
+    text-decoration: none;
+    /* left: 110px;
+    top: 244px;  */
+    background: #FFFFFF;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+
+/*ESTILOS PARA SECCION PRINCIPAL DE FUNKOS*/
+.funkosImgMini{
+    display: none;
+}
+
+.hr {
+    display: block;
+    width: 100%;
+    background: content-box;
+    border-color: #ff4848;
+}
+
+.funkoColeccion{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+}
+
+.funkoColeccionContainer{
+    display: flex;
     justify-content: center;
     align-items: center;
-  }
+    margin-bottom: 30px;
+}
 
-  .pokemon_text {
-    font-family: "Raleway", sans;
-    font-size: 1.7em;
-    color: #111111;
-    font-style: medium;   
-    vertical-align: top;
-    padding-right: 6em;
+.textoFunkoColeccion h2 {
+    font-size: 2em;
+}
+
+.funkoContainerCart{
+    flex-direction: column;
+}
+
+.textoFunkosCart{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+
+}
+
+/* precio de los funkos */
+.price{
     
-  }
+    font-weight: bold;
+}
 
-  .pokemon_text p {
-    font-size: .7em;
-    padding-right: 6em;
-  }
+/* boton eliminar en pagina cart (carrito de compras)*/
+.botones_comprar_eliminar{
+    flex-direction: row !important;
+    align-items: center !important;
+}
 
-  .pokemon_photo img {
-    width: 90%;
-    height: 140%;  
-    padding-left: 6em;
-    padding-right: 0;
-  }
-
-  .linea2 {
-    border: 1px solid #FF3333;
-    border-radius: 1em;
-    width: 120%;
-  }
-
-  .buttonCollection button {
-    border-radius: 70px;
-    display: inline-block; 
-    width: 16em;
-    height: 3em;
-    font-size: 16px;
-    margin-top: 2em;
-    margin-bottom: 7em;
-    background-color:#30343F;
-    color: #FFFFFF;
-    font-family: "Inter", sans-serif;
-  }
-  /*-----FIN POKEMON SECTION-----*/
-
-
-  /*-----HARRY POTTER SECTIONS-----*/
-  .section_harrypotter {
+.eliminar, .eliminarPokemon, .eliminarHP{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #ff4848;
+    justify-content: center;
     align-items: center;
-    margin-top: 5%;
-    padding-left: 2%;
-  }
+}
 
-  .harrypotter_text {
-    font-family: "Raleway", sans;
-    font-size: 1.7em;
-    color: #111111;
-    font-style: medium;
-    margin-bottom: 0.5em; 
-    vertical-align: top;
-  }
+.eliminar img, .eliminarPokemon img, .eliminarHP img{
+    height: 38px !important;
+}
 
-  .harrypotter_text p {
-    font-size: .7em;
-    
-  }
+/* boton comprar en pagina cart (carrito de compras) */
 
-  .harrypotter_photo img {
-    width: 85%;
-    height: 170%;
-    padding-left: 3em;
-    
-  }
+.btnComprar ,.btnComprarPokemon ,.btnComprarHP{
+    position: relative;
+    background: transparent;
+    padding: 12px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 0.9px solid red;
+    margin-right: 20px;
+}
 
-  .linea3 {
-    border: 1px solid #FF3333;
-    border-radius: 1em;
-    width: 130%;
-    
-  }
+/* botones ver coleccion */
 
-  .buttonCollection button {
-    border-radius: 70px;
+.botonColeccion{
+    background-color: #30343F;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 180px;
+    position: absolute;
+    height: 40px;
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -40px;
+}
+
+
+.funkoColeccionContainer img{
+    height: 280px;
+}
+
+.funkoColeccionContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: baseline;
+    padding-bottom: 10px;
+}
+
+/* estilos para los botones de la pagina CART en la seccion principal */
+.botonera {
+    flex-direction: row !important;
+}
+
+.botonera input{
+    width: 26px;
+    height: 17px;
+    text-align: center;
+}
+
+.btnBotonera{
+    height: 23px;
+    width: 28px;
+    background: #4F4F4F;
+    color: white;
+}
+
+/* estilos para quitarle al input tipo number las flechitas para subir y bajar el valor del value. */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+
+/* ESTILO PAR SPAN DE CARRITO DE COMPRAS VACIO EN CART.HTML */
+.carritoVacio{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+    word-break: break-word;
+    margin: 20px;
+}
+
+hr {
+    width: 100%;
+}
+
+/*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
+
+.ultimosLanzamientosSpan{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    word-break: break-word;
+    margin: 20px;
+}
+
+.caracteristica span{
+    background-color: #ff4848;
+    font-size: 1rem;
+    color: #fff;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 75px;
+    right: 0px;
+    line-height: 30px;
+    top: 0px;
+}
+
+.mySlides {
+    display: none;
+    /* pointer-events: none; */
+}
+
+img {
+    vertical-align: middle;
+}
+
+.textoLanzamientosCarta{
+    text-align: center;
+}
+
+.cuotas{
+    color: #1D84B5;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
     display: inline-block;
-    width: 16em;
-    height: 3em;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*ESTILOS PARA EL FOOTER*/
+
+footer{
+    background-color: #30343F;
+}
+
+.navFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    max-width: 1200px;
+}
+
+.navLinksFooter ul{
+    list-style: none;
+}
+
+.navLinksFooter ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.navLinksFooter li{
+    padding: 5px;
+}
+
+.logoFooter img{
+    height: 100px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+/*PAGINA SHOP*/
+
+/*ESTILOS PARA LA SECCION SEARCH*/
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer{
+    padding: 20px;
+}
+
+.search{
+   /*  display: block;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+
+.search p{
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.noResults{
+    font-size: 0.8rem;
+    color: red;
+}
+
+.inputSearch{
+    font-size: 12px;
+    padding: 5px 12px;
+    border-color: black;
+    border: groove;
+    border-radius: 6px;
+}
+
+.buttonSearch{
+    margin-top: 6px;
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    border-color: red;
+    padding: 6px 13px;
+    font-size: 12px;
+}
+
+#ordenarPor {
+    border: groove;
+    border-radius: 10px;
+    padding: 2px 12px;
+}
+
+.minMaxInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.minMaxInputs input{
+    width: 30%;
+    margin: 5px;
+}
+
+.filter{
+    display: none;
+}
+
+/* ESTILOS PARA LA PAGINA LOGIN */
+
+.pantallaCompleta{
+    position: absolute;
+    background-color: #30343F;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999;
+}
+
+.containerLoginForm {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form {
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px solid #ff4848;
+    border-radius: 15px;
+    margin: 5%;
+}
+
+.sign-in-container {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.form input {
+    display: block;
+    width: 90%;
+    padding: .5rem;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form input[type="submit"] {
+    width: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #ff4848;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.form a {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 150px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* ESTILOS PARA LA SECCION DE CONTACTO */
+
+#container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    grid-gap: 50px;
+    text-align: center;
+}
+
+#container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+#container-form h3{
+    font-weight: normal;
+    color: #ff4848;
+}
+
+#container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+#container-form a i{
+    color: #ff4848;
+    margin-right: 10px;
+}
+
+
+#container-form form .campo{
+    width: 90%;
+    padding: 15px 10px;
     font-size: 16px;
-    margin-bottom: 7em;
-    background-color:#30343F;
-    color: #FFFFFF;
-    font-family: "Inter", sans-serif;
-  }
-
-/*---NEWS SECTIONS CARROUSELL---*/
-  
-#news {
-  font-family: "Raleway", sans-serif;
-  font-size: 36px;
-  color: #111111;
-  padding-left: 7.5%;
-}
-
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  
-  /*max-width: 800px;*/
-  margin: 0 auto;
-}
-
-.carousel-slide {
-  display: flex;
-  overflow-x: hidden;
-  transition: all 0.5s ease;
-  
-}
-
-.carousel-slide figure img {
-  /*flex-shrink: 0;*/
-  /*width: calc(100% / 3);*/
-  width: 350px;
-  height: auto;
-  margin-right: 1em;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border: 4px;
-  background-color:#FFFFFF;
-  color: #000;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.carousel-button-left {
-  left: 20px;
-}
-
-.carousel-button-right {
-  right: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*----FOOTER------*/
-footer {
-  background-color: #30343F;
-}
-
-.container_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 5%;
-  
-  
-}
-
-.container_footer img {
-  display: flex;
-  width: 80%;
-  height: 50%;
-
-}
-
-.footer_links {
-  display: flex;
-
-}
-
-.footer_links ul {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9em;
-  
-}
-
-.footer_links ul li {
-  font-family: "Raleway", sans-serif;
-  font-size: .9em;
-  font-weight: 500;
-  list-style: none; 
-  margin-bottom: 10px; 
-  
-}
-
-.footer_links ul li a {
-  position: relative;
-  text-decoration: none;
-  font-size: 1em;
-  color: #f5f5f5;
-  align-content: space-evenly;
-}
-
-
-.footer_legal p {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9em;
-  text-align: center;
-  margin-bottom: 0;
-  color:#f5f5f5;
-}
-
-/*-------------------------------fin HOME-------------------------*/
-
-
-
-
-
-/*-----------------------SHOP--------------------------------*/
-.grid_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: .2em;
-  grid-row-gap: 1em;
-  
-}
-
-.filter {
-  list-style: none;
-}
-
-input[type="checkbox"] {
-  appearance: none;
-  border: 2px solid #111111;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px;
-  display:inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #111111;
-}
-
-ul.filter {
-  padding-left: .5em;
-}
-
-label {
-  font-size: .9em;
-}
-
-.searcher:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.card_product:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.card_product:nth-child(3) {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.card_product:nth-child(4) {
-  grid-column: 4;
-  grid-row: 1;
-}
-
-.card_product:nth-child(5) {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.card_product:nth-child(6) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.card_product:nth-child(7) {
-  grid-column: 4;
-  grid-row: 2;
-}
-
-.card_product:nth-child(8) {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.card_product:nth-child(9) {
-  grid-column: 3;
-  grid-row: 3;
-}
-
-.card_product:nth-child(10) {
-  grid-column: 4;
-  grid-row: 3;
-}
-
-
-/*-----estilo paginacion--------*/
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination li {
-  margin-right: 5px;
-  list-style: none;
-}
-
-.pagination li a {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: #e9ecef;
-  color: #212529;
-  font-size: 14px;
-}
-
-.pagination li a:hover {
-  background-color: #dee2e6;
-  color: #212529;
-}
-
-.pagination li.active a {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.pagination li.disabled a {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-.page-item {
-  margin-right: 5px;
-  list-style: none;
-  border-radius: 5px;
-  
-  border-radius: 4px;
-
-  ;
-}
-
-
-
-
-
-/*----------------------fin SHOP----------------------------------*/
-
-
-
-
-/*-------------------------ITEM-----------------------------------*/
-.item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 7em;
-}
-
-.item img {
-  width: 40%;
-  height: auto;
-  margin-right: 2em;
-}
-
-.item_descriptions {
-  margin-left: 10px;
-}
-
-.item_descriptions h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.item_description1 {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color:#333333;
-}
-
-.item_description2 {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333333;
-}
-
-.item_description3 {
-  font-family: "Inter", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  color: #333333;
-}
-
-.item_description4 {
-  font-family: "Inter", sans-serif;
-  font-size: .7em;
-  color:#1D84B5;
-  font-weight: 700;
-}
-
-
-.items_relacionados h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 32px;
-  color: #111111;
-  padding-left: 7.5%;
-}
-
-
-
-.addToCart_container {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  padding: 0 0.5em;
-  width: 100%;
-}
-
-.menos {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-  background-color:#4F4F4F;
-  color: #f5f5f5;
-  
-
-}
-
-.mas {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  background-color:#4F4F4F;
-  color: #f5f5f5;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-
-.cant_items {
-  background-color: #FFFFFF;
-  color: #C9C9C9;
-  font-size: .3em;
-  box-sizing: border-box;
-  border: 0;
-  background: 50%;
-  
-}
-
-.agregar {
-  background-color: #FF3333;
-  color:#f5f5f5 ;
-  border-style: none;
-  font-family: "Inter", sans-serif;
-  font-size: .9em;
-  padding: 0.2em .6em 0.2em .6em;
-}
-
-
-.container_news {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 30px;
-}
-
-
-
-#card img {
-  width: 90%;
-  height: 130%;
-}
-
-.modo-v {
-  display: flex;
-  background-color:#FF3333;
-  width: fit-content;
-  color: #FFFFFF;
-  font-size: .8em;
-  padding: 0.4em 1em 0.4em 1em;
-  float: right;  
-  font-family: "Raleway", sans-serif;
-}
-
-.descriptions {
-  margin-left: 3.5em;
-}
-
-.description-1 {
-  font-family: "Inter", sans-serif;
-  font-size: 0.7em;
-  font-weight: 500;
-  
-}
-
-.description-2 {
-  font-family: "Inter", sans-serif;
-  
-}
-
-.description-3 {
-  font-family: "Inter", sans-serif;
-  font-size: 0.9em;
-  font-weight: 400;
-  
-}
-
-.description-4 {
-  color: #1D84B5;
-  font-style: bold;
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-  
-}
-
-
-
-
-/*-------------------LOGIN--------------------------------------*/
-#salir {
-  font-family: "Raleway", sans-serif;
-  font-size: .9em;
-  font-weight: 500;
-  color:#f5f5f5;
-}
-
-.form_login {
-  display: grid;
-  place-items: center;
-  
-}
-
-.form_login h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 2.5em;
-  color:#1F1F1F;
-  font-weight: 700;
-  padding-top: 1em;
-  padding-bottom: 1em;
-
-}
-
-#label1_login , #label2_login {
-  display: flex;
-  align-items: center;
-  padding-bottom: 1em;
-  
-  
-}
-
-#label1_login label, #label2_login label {
-  flex: 1;
-  text-align: left;
-  font-family: "Inter", sans-serif;
-  
-  font-size: 1.3em; 
-  margin-right: 2em;
-
-}
-
-#label1_login input[type="email"], #label2_login input[type="password"] {
-  
-  text-align: right;
-  border: none;
-  border-bottom: 2px solid #FF3333;
-  background-color: transparent;
-  padding: 1px;
-  width: 65%;
-  
-}
-
-
-input[type="password"] {
-  color: #E0E0E0;
-  font-size: 2em;
-  letter-spacing: 4px;
-}
-
-
-
-#ingresar {
-  background-color: #FF3333;
-  color: #FFFFFF;
-  font-family: "Inter", sans-serif;
-  font-size: .7em;
-  font-weight: 400;
-  border-style: none;
-  padding: 1em 2.7em 1em 2.7em;
-  cursor: pointer;
-  margin-right: 1.7em;
-}
-
-#ingreso #checkbox {
-  margin-left: 1.7em;
-}
-
-#ingreso {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.recuperar_contraseña {
-  display: flex;
-  justify-content: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: .6em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  
-}
-
-.recuperar_contraseña a {
-  text-decoration: none;
-  color: #1D84B5;
-
-}
-
-.recuperar_contraseña a:hover {
-  text-decoration: underline;
-  color: #FF3333;
-}
-
-
-#ingreso label {
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  color: #1f1f1f;
-}
-
-
-/*----------------------REGISTRO--------------------*/
-.form_registro {
-  display: grid;
-  place-items: center;  
-  background-color:#FFFFFF;
-  ;
-}
-
-.form_registro h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  color:#1F1F1F;
-  font-weight: 700;
-  padding-top: 1em;
-  padding-bottom: .3em;
-  letter-spacing: 0.04em;
-}
-
-.form_registro h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5em;
-  color:#1F1F1F;
-  font-weight: 700;
-  padding-top: .3em;
-  padding-bottom: 1em;
-  letter-spacing: 0.04em;
-}
-
-#label1, #label2, #label3, #label4, #label5 {
-  display: flex;
-  align-items: center;
-  padding-right: 1.5em;
-  
-
-}
-
-#label1 label, #label2 label, #label3 label, #label4 label, #label5 label {
-  flex: 1;
-  text-align: left;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 1.2em;
-  margin-right: 2em;
-  
-  
-}
-
-#label5 label {
-  white-space: nowrap;
-}
-
-#label1 input, #label2 input, #label3 input, #label4 input, #label5 input {
-  font-size: 1em;
-  text-align: right;
-  border: none;
-  border-bottom: 2px solid #FF3333;
-  background-color: transparent;
-  
-  width: 200px;
-}
-
-#label4 input[type="password"], #label5 input[type="password"] {
-  color: #E0E0E0;
-  letter-spacing: 4px;
-  
-
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+#container-form textarea{
+    width: 90%;
+    height: 270px;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+#container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #ff4848;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
 }
 
-#label4 input::placeholder, #label5 input::placeholder {
-  font-size: 1em;
+#sobre-nosotros-contact-form{
+    display: flex;
+    justify-content: center;
 }
 
-#registro {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 2em;
-  
+.navigation-contact-form{
+    align-items: center;
+    width: auto;
 }
 
-
-
-#registro button {
-  background-color: #FF3333;
-  color: #FFFFFF;
-  font-family: "Inter", sans-serif;
-  font-size: .8em;
-  font-weight: 400;
-  border-style: none;
-  padding: 1em 2.7em 1em 2.7em;
-  cursor: pointer;
-  margin-right: 3em;
-  
-  
-}
-
-#registro label, #registro a #registro_legales {
-  font-family: "Inter", sans-serif;
-  font-size: .9em;
-  margin-top: .5em;
-}
-
-#registro_legales a {
-  text-decoration: none;
-  color: #1D84B5;
-}
-
-#registro_legales a:hover {
-  text-decoration: underline;
-  color: #FF3333;
-}
-
-
-/*------------------ADMIN------------------------*/
-#search-form {
-  display: flex;
-  flex-direction: row;
-  margin-left: 9em;
-  
-}
-
-.search-form {
-  display: flex;
-  flex-direction: row;
-
-   
-}
-
-
-.search-form input[type="image"] {
-  padding: .7em;
-  border: none;
-  width: 3.7em;
-  height: auto;
-  margin-top: .9em;
-}
-
-.search-form input[type="text"] {
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
-  margin-top: 1.5em;
-  border: 2px solid #30343F;
-  border-radius: 6px;
-  width: 30em;
-  height: 1.8em;
-
-}
-
-
-.tabla {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: .2em 1em .2em 1em;
-  
-
-}
-
-.tabla h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.7em;
-  font-weight: 700;
-  font-style: bolder;
-  color:#1F1F1F;
-  
-}
-
-.agregar-producto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 7em;
-  
-  
-}
-
-.agregar-producto p {
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  font-style: bolder;
-  color:#1F1F1F;
-  margin-top: 3.5em;
-  margin-left: 5.5em;
-  margin-right: 4.2em;
- 
-}
-
-.agregar-producto a img {
-  padding: 0;
-  margin-top: 3em;
-  margin-left: 2.5em;
-  width: 45%;
-  height: auto;
-  
-}
-
-
-table {
-  border-collapse: separate;
-  border-spacing: 7em 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
-}
-
-
-
-#titulos_columnas {
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  color:#1f1f1f;
-  font-style: bolder;
-  
- 
-}
-
-#titulos_columnas th {
-  text-align: left; 
-  padding-bottom: 1.5em;
-}
-
-#detalle_productos {
-  font-family: "Inter", sans-serif;
-  font-size: .9em;
-  font-weight: 500;
-  color:#1F1F1F;
-  letter-spacing: 2%;
-  font-style: normal;
-
-}
-
-
-/*-----------CREATE--------*/
-
-body {
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-}
-
-.container_create {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 3em;
-  
-}
-
-.container_create h1 {
-  font-family: "Raleway", "sans-serif";
-  font-size: 2.1em;
-  color: #1F1F1F;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  margin-bottom: 1em;
-  
- 
-}
-
-.form-group .form-categoria, .form-group .form-licencia  {
-  display: inline-block;
-  font-family: "Inter", "sans-serif";
-  font-weight: 300;
-  font-size: 1.2em;
-  color: #000000;
-
-}
-
-.seleccionar {
-  font-size: .8em;
-  padding: 8px 12px;
-  border: 2px solid #30343F; 
-  border-radius: 4px;
-  background-color: #fff;
-  color: #B9B9B9;
-  width: 250px;
-  height: 40px;
-  margin-bottom: 1em;
- 
-
-}
-
-.seleccionar option[disabled] {
-  color: #fff;
-}
-
-.seleccionar option[selected] {
-  display: none;
-}
-
-.form-nombre-producto {
-  font-family: "Inter", "sans-serif";
-  font-weight: 400;
-  font-size: 1.2em;
-  color: #000000;
-  margin-bottom: 1em;
-}
-
-.form-nombre-producto input[type="text"] {
-  text-align: right;
-  border: none;
-  border-bottom: 2px solid #FF3333;
-  background-color: transparent;
-  padding: 1px;
-  width: 25%;
-}
-
-.form-nombre-producto div #descripcionProducto {
-  font-family: "Inter", "sans-serif";
-  font-weight: 400;
-  font-size: .7em;
-  color: #B9B9B9;
-  letter-spacing: 0.04em;
-  border: 1px solid #1F1F1F;
-  border-radius: 4px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-
+.navigation-contact-form h1{
+    text-align: center;
 }
 
-.form-sku-precio-stock {
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
+/*mensajes en el formulario (parrafos)*/
+.alertas{ 
+    color: #ff4848;
+    font-size: 0.8rem;
 }
 
-.form-sku, .form-precio, .form-stock {
-  font-family: "Inter", "sans-serif";
-  font-weight: 400;
-  font-size: 1.2em;
-  letter-spacing: 0.04em;
-  color: #000000;
-  margin-bottom: 1em;
 
+/* seccion stock insuficiente en cart.html */
+.noStock{
+    background-color: #101010;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.98;
+    transition: 0.5s ease-in-out;
+    z-index: 9999;
 }
 
-.form-sku #sku, .form-precio #precio, .form-stock #stock {
-  text-align: left;
-  border: none;
-  border-bottom: 2px solid #FF3333;
-  background-color: transparent;
-  padding: 1px;
-  width: 45%;
+.stockContainer h2{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+    font-weight: bold;
 }
 
-
-.form-descuento-cuotas {
-  display: flex;
-  flex-direction: row;
+.btnCloseStock{
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    border: none;
+    background: #101010;
+    cursor: pointer;
 }
 
-.form-descuento {
-  font-family: "Inter", "san-serif";
-  font-size: 1.2em;
-  font-weight: 400;
-  color: #000000;
-  
-  
+/* seccion producto comprado cart.html */
+.comprado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: #101010;
+    z-index: 9999;
+    
 }
 
-.form-cuotas {
-  font-family: "Inter", "san-serif";
-  font-size: 1.2em;
-  font-weight: 400;
-  color: #000000;
-  
+.btnSeguirComprando{
+    position: relative;
+    background: transparent;
+    padding: 12px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 0.9px solid red;
+    margin-right: 20px;
 }
 
-.form-imagenes {
-  display: flex;
-  flex-direction: row; 
-  
+.textoComprado{
+    width: 80%;
+    margin: 0px auto;
 }
 
-.form-imagenes label {
-  font-family: "Inter", "sans-serif";
-  font-weight: 400;
-  font-size: 1.2em;
-  color: #000000;
-
+.textoComprado h1{
+    color: white;
 }
-
-.form-imagenes button[type=submit] {
-  background: rgba(217, 217, 217, 0.63);
-  border: 1px solid rgba(48, 52, 63, 0.7);
-  border-radius: 3px;
-  font-family: "Arial", "sans-serif";
-  font-weight: 400;
-  font-size: .7em;
-  color: #1F1F1F;
-  width: 8%;
-  height: 5%;
 
+.textoComprado p{
+    color: white;
 }
 
-.form-imagenes p {
-  font-family: "Arial", "sans-serif";
-  font-weight: 400;
-  font-size: .9em;
-  color: #1F1F1F;
+.textoComprado p a{
+    color: blue;
+    text-decoration: none;
 }

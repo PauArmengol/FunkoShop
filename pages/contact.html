@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mini.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <link rel="icon" href="../img/branding/isotype.svg">
+    <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <title>FunkoShop !</title>
+</head>
+<body>
+    
+    <header>
+        <div class="envoltorioNav">
+            <div class="logoNav">
+                <a class="logoNavMobile" href=""><img src="../img/branding/isotype.svg" alt="" class="hola"></a>
+                <a href="" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a>
+            </div>
+            
+            <nav>
+                <button class="openMenu"><img src="../img/icons/menu.png" alt=""></button>
+                <ul class="navLinksUL inactive menuAbierto">
+
+                    <button class="closeMenu"><img src="../img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="../index.html">Inicio</li></a>
+                    <li><a href="./shop.html">Shop</li></a>
+                    <li><a href="./contact.html">Contacto</li></a>
+                    <li><a href="./login.html">Login</li></a>
+                    <a class="iconoCart" href="./cart.html"><img src="../img/icons/cart-icon.svg" alt=""></a>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <!-- SECCION FORMULARIO DE CONTACTO -->
+    <main>
+        <section id="container-form">
+            <div class="info-form">
+                <h2>Contáctanos</h2>
+                <h3>Nuestro horario de atencion es de Lunes a Viernes de 09:00 a 18hs, ante consultas o sugerencias dejanos tu mensaje. Gracias.</h3>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Seguinos en Instagram</a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Seguinos en Facebook </a>
+                <a href="tel:+54911###"><i class="fa fa-phone"></i> 11####</a>
+                <a href="mailto:#"><i class="fa fa-envelope"></i>p.armengol.it@gmail.com</a>
+            </div>
+            
+            <form action="#" method="post" id="form" autocomplete="on">
+                <input type="text" id="FormControlInput1" name="nombre" placeholder="Tu Nombre" class="campo" required>
+                <p class="alertas" id="alertas-names"></p>
+                <input type="email" id="FormControlInput2" name="email" placeholder="Tu Email" class="campo" required>
+                <p class="alertas" id="alertas-email"></p>
+                <textarea id="FormControlTextarea1" name="mensaje" placeholder="Tu Mensaje..." required></textarea>
+                <p class="alertas" id="alertas-msg"></p>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <nav class="navFooter">
+            <div class="navLinksFooter">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./login.html">REGISTRARSE</a></li>
+                    <li><a href="./login.html">INGRESAR</a></li>
+                </ul>
+            </div>
+            <div class="logoFooter">
+                <img src="../img/branding/isotype.svg" alt="">
+            </div>
+        </nav>
+        <p class="copyright">&copy; 2023  Developed with ♥ by Paula Armengol - All rigths reserved </p>
+    </footer>
+
+
+    <script src="../js/navBar.js"></script>
+    <script src="../js/validation-form.js"></script>
+</body>
+</html>

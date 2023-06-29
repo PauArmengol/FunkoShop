@@ -4,180 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img/branding/favicon-16x16.png">
-    <title>Funkoshop</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mini.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="icon" href="./img/branding/isotype.svg">
+    <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+    <title>FunkoShop</title>
 </head>
 <body>
-
-    <header class="header_container">
-        <div class="logo">
-            <a href="#" id="logo_nav"><img src="img/branding/logo_light_horizontal.svg" alt="logo"></a>
+    <header>
+        <div class="envoltorioNav">
+            <div class="logoNav">
+                <a class="logoNavMobile" href=""><img src="./img/branding/isotype.svg" alt="" class="hola"></a>
+                <a href="" class="logoNavDesktop"><img src="./img/branding/logo_light_horizontal.svg" alt=""></a>
+            </div>
+            
+            <nav>
+                <button class="openMenu"><img src="./img/icons/menu.png" alt=""></button>
+                <ul class="navLinksUL inactive menuAbierto">
+                    <button class="closeMenu"><img src="./img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="./pages/shop.html">Shop</li></a>
+                    <li><a href="#">Contacto</li></a>
+                    <li><a href="./pages/login.html">Login</li></a>
+                    <a class="iconoCart" href="#"><img src="./img/icons/cart-icon.svg" alt=""></a>
+                </ul>
+            </nav>
         </div>
-        <div class="group">
-            <ul>
-                <li class="dropdown"><a href="../pages/shop.html">SHOP</a></li>
-                <li><a href="#" target="_blank" id="#">CONTACTO</a></li>
-                <li><a href="../pages/login.html" target="_blank" id="#">LOG IN</a></li>
-                <li><a href="../pages/shop.html" target="_blank" id="#"><img src="img/icons/cart-icon.svg" alt="carrito"></a></li>
-            </ul>
-        </div>      
-    </header>
+    </header> 
+
+        <section class="principalBanner">
+            <div class="bannerContainer">
+                <div class="textoBanner">
+                    <h1>NUEVOS INGRESOS</h1>
+                    <p>Descubrí el próximo Funko Pop de tu colección</p>
+                    <a href="./pages/shop.html">SHOP</a>
+                </div>
+            </div>
+        </section>
 
     <main>
-        <div class="banner">
-            <div class="banner_text">
-                <h1>Nuevos Ingresos</h1>
-                <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href="./pages/shop.html" class="shopButton" target="_blank"><button>SHOP</button></a>
-            </div>
-        </div>
-        <div>
-            <div class="section_marvel">
-                <div class="marvel_text">
-                    <h2>STAR WARS & <br> THE MANDALORIAN</h2>
-                    <p>Disfruta de una saga que sigue <br> agregando personajes a su colección.</p>
-                    <hr class="linea1">
-                    <a href="#" class="buttonCollection" target="_blank"><button>VER COLECCIÓN</button></a>
+        <section class="funkoColeccion">
+
+            <div class="funkoColeccionContainer">
+                <div class="textoFunkoColeccion ">
+                    <h2>STAR WARS <br>& THE MANDALORIAN</h2>
+                    <p>Disfruta de una saga que sigue agregando personajes a su colección</p>
+                    <hr class="hr">
+                    <img class="funkosImgMini" src="./img/star-wars/baby-yoda-1.webp" alt="Baby Yoda">
+                    <a class="botonColeccion" href="./html/shop.html">VER COLECCIÓN</a>
                 </div>
-                <div class="marvel_photo">
-                    <img src="img/star-wars/baby-yoda-1.webp" alt="baby_yoda">
+                <div class="imagenFunkoYoda">
+                    <img class="funkosImgMobile hidden " src="./img/star-wars/baby-yoda-1.webp" alt="">
                 </div>
             </div>
-            <div class="section_pokemon">
-                <div class="pokemon_photo">
-                    <img src="img/pokemon/vulpix-1.webp" alt="vulpix">
+
+            <div class="funkoColeccionContainer">
+                <div class="imagenPokemonIndigo">
+                    <img class="funkosImgMobile hidden" src="./img/pokemon/vulpix-1.webp" alt="Pokemon">
                 </div>
-                <div class="pokemon_text">
+                <div class="textoFunkoColeccion">
                     <h2>POKEMON INDIGO</h2>
-                    <p>Atrapa todos los que puedas y disfruta <br> de una colección llena de amigos.</p>
-                    <hr class="linea2">
-                    <a href="#" class="buttonCollection" target="_blank"><button>VER COLECCIÓN</button></a>
-                </div>    
+                    <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
+                    <hr class="hr">
+                    <img class="funkosImgMini " src="./img/pokemon/vulpix-1.webp" alt="" style="width: 100; height: 100;">
+                    <a class="botonColeccion" href="./html/shop.html">VER COLECCIÓN</a>
+                </div>
             </div>
-            <div class="section_harrypotter">
-                <div class="harrypotter_text">
+
+            <div class="funkoColeccionContainer">
+                <div class="textoFunkoColeccion">
                     <h2>HARRY POTTER</h2>
-                    <p>Revive los recuerdos de una saga llena <br> de magia y encanto.</p>
-                    <hr class="linea3">
-                    <a href="#" class="buttonCollection" target="_blank"><button>VER COLECCIÓN</button></a>
+                    <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+                    <hr class="hr">
+                    <img class="funkosImgMini " src="./img/harry-potter/snape-patronus-1.webp" alt="Harry Potter">
+
+                    <a class="botonColeccion" href="./html/shop.html">VER COLECCIÓN</a>
                 </div>
-                <div class="harrypotter_photo">
-                    <img src="img/harry-potter/snape-patronus-1.webp" alt="snape-patronus">
+                <div class="imagenHarryPotterCiervo">
+                    <img class="funkosImgMobile hidden" src="./img/harry-potter/snape-patronus-1.webp" alt="">
                 </div>
             </div>
-        </div>
+
+        </section>   
     </main>
 
-        <!--carrousel-->
-      
-        <h2 id="news">ÚLTIMOS LANZAMIENTOS</h2>
+    <span class="ultimosLanzamientosSpan">ÚLTIMOS LANZAMIENTOS</span>
+    <section class="ultimosLanzamientos">
+        <div class="slideshow-container">
         
-        <div class="carousel-container">
-
-            <div class="carousel-slide">
-                <figure>
-                    <p class="modo-v">NUEVO</p>
-                    <img src="img/star-wars/trooper-1.webp" alt="STORMTROOPER LIGHTSABER" >
-                    <figcaption class="descriptions">
-                        <p class="description-1">STAR WARS</p>
-                        <h3 class="description-2">STORMTROOPER LIGHTSABER</h3>
-                        <p class="description-3">$ 1799,99.-</p>
-                        <p class="description-4">3 CUOTAS SIN INTERÉS</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <p class="modo-v">NUEVO</p>
-                    <img src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
-                    <figcaption class="descriptions">
-                        <p class="description-1">POKEMON</p>
-                        <h3 class="description-2">PIDGEOTTO</h3>
-                        <p class="description-3">$ 1799,99.-</p>
-                        <p class="description-4">3 CUOTAS SIN INTERÉS</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <p class="modo-v">NUEVO</p>
-                    <img src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOOD LION MASK">
-                    <figcaption class="descriptions">
-                        <p class="description-1">HARRY POTTER</p>
-                        <h3 class="description-2">LUNA LOVEGOOD LION MASK</h3>
-                        <p class="description-3">$ 1799,99.-</p>
-                        <p class="description-4">3 CUOTAS SIN INTERÉS</p>
-                    </figcaption>
-                </figure>
-
-                
-
-                <figure>
-                    <p class="modo-v">NUEVO</p>
-                    <img src="img/star-wars/trooper-1.webp" alt="STORMTROOPER LIGHTSABER" >
-                    <figcaption class="descriptions">
-                        <p class="description-1">STAR WARS</p>
-                        <h3 class="description-2">STORMTROOPER LIGHTSABER</h3>
-                        <p class="description-3">$ 1799,99.-</p>
-                        <p class="description-4">3 CUOTAS SIN INTERÉS</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <p class="modo-v">NUEVO</p>
-                    <img src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
-                    <figcaption class="descriptions">
-                        <p class="description-1">POKEMON</p>
-                        <h3 class="description-2">PIDGEOTTO</h3>
-                        <p class="description-3">$ 1799,99.-</p>
-                        <p class="description-4">3 CUOTAS SIN INTERÉS</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <p class="modo-v">NUEVO</p>
-                    <img src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOOD LION MASK">
-                    <figcaption class="descriptions">
-                        <p class="description-1">HARRY POTTER</p>
-                        <h3 class="description-2">LUNA LOVEGOOD LION MASK</h3>
-                        <p class="description-3">$ 1799,99.-</p>
-                        <p class="description-4">3 CUOTAS SIN INTERÉS</p>
-                    </figcaption>
-                </figure>
+            <div class="mySlides fade">
+                <div class="caracteristica">
+                    <span>NUEVO</span>
+                </div>
+                <div class="numbertext">1 / 3</div>
+                <a href=""><img src="./img/star-wars/trooper-1.webp" style="width:100%"></a>
+                <div class="textoLanzamientosCarta">
+                    <h4 class="claseLanzamientosCarta1">STAR WARS</h4>
+                    <h3 class="nombreLanzamientosCarta1">STORMTROOPER LIGTHSABER</h3>
+                    <p class="precioLanzamientosCarta1">$ 1799,99.-</p>
+                    <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                </div>
             </div>
-                <button class="carousel-button carousel-button-left">&#8249;</button>
-                <button class="carousel-button carousel-button-right">&#8250;</button>
+        
+            <div class="mySlides fade">
+                <div class="caracteristica">
+                    <span>NUEVO</span>
+                </div>
+                <div class="numbertext">2 / 3</div>
+                <a href=""><img src="./img/pokemon/pidgeotto-1.webp" style="width:100%"></a>
+                <div class="textoLanzamientosCarta">
+                    <h4 class="claseLanzamientosCarta2">POKEMON</h4>
+                    <h3 class="nombreLanzamientosCarta2">PIDGEOTTO</h3>
+                    <p class="precioLanzamientosCarta2">$ 1799,99.-</p>
+                    <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="caracteristica">
+                    <span>NUEVO</span>
+                </div>
+                <div class="numbertext">3 / 3</div>
+                <a href=""><img src="./img/harry-potter/luna-1.webp" style="width:100%"></a>
+                <div class="textoLanzamientosCarta">
+                    <h4 class="claseLanzamientosCarta3">HARRY POTTER</h4>
+                    <h3 class="nombreLanzamientosCarta3">LUNA LOVEGOOD LION MASK</h3>
+                    <p class="precioLanzamientosCarta3">$ 1799,99.-</p>
+                    <p class="cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                </div>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
         </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
 
     <footer>
-        <div class="container_footer">
-            <div class="footer_links">
+        <nav class="navFooter">
+            <div class="navLinksFooter">
                 <ul>
-                    <li><a href="pages/shop.html" target="_blank" id="#">SHOP</a></li>
-                    <li><a href="./pages/registro.html" target="_blank" id="#">REGISTRARSE</a></li>
-                    <li><a href="./pages/login.html" target="_blank" id="#">INGRESAR</a></li>
-                    <li><a href="#" target="_blank" id="#">CONTACTO</a></li>
+                    <li><a href="./pages/shop.html">SHOP</a></li>
+                    <li><a href="./pages/registro.html">REGISTRARSE</a></li>
+                    <li><a href="./pages/login.html">INGRESAR</a></li>
+                    <li><a href="#">CONTACTO</a></li>
                 </ul>
             </div>
-            <div>
-                <img src="img/branding/isotype.svg" alt="logo">
+            <div class="logoFooter">
+                <img src="./img/branding/isotype.svg" alt="">
             </div>
-        </div>
-        <div class="footer_legal">
-            <p>Developed with <img src="./img/purple_hearts/favicon-16x16.png"> by Paula Armengol &copy; - All Rights Reserved - 2023</p>
-        </div>
+        </nav>
+        <p class="copyright">&copy; 2023  Developed with ♥ by Paula Armengol - All rigths reserved </p>
     </footer>
 
-   <script src="js/carrousell.js"></script>
-    
+
+    <script src="./src/navBar.js"></script>
+    <script src="./src/slider.js"></script>
 
 </body>
 </html>

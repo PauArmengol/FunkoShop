@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/mini.css">
+        <link rel="stylesheet" href="../css/desktop.css">
+        <link rel="icon" href="../img/branding/isotype.svg">
+        <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+        <title>FunkoShop</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="envoltorioNav">
+                <div class="logoNav">
+                    <a class="logoNavMobile" href=""><img src="../img/branding/isotype.svg" alt="" class="hola"></a>
+                    <a href="" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" alt=""></a>
+                </div>
+    
+                <nav>
+                    <button class="openMenu"><img src="../img/icons/menu.png" alt=""></button>
+                    <ul class="navLinksUL inactive menuAbierto">
+    
+                        <button class="closeMenu"><img src="../img/icons/close-icon.svg" alt=""></button>
+                        <li><a href="../index.html">Inicio</li></a>
+                        <li><a href="./shop.html">Shop</li></a>
+                        <li><a href="./contact.html">Contacto</li></a>
+                        <li><a href="./login.html">Login</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <section class="funkoColeccion">
+                <div id="1" class="funkoColeccionContainer funkoContainerCart" style="display:none">
+                    <div class="imagenFunko">
+                        <img class="funkosImgMobile" src="../img/star-wars/luke-box.webp" alt="imagen de producto">
+                    </div>
+                    <div class="textoFunkoColeccion textoFunkosCart">
+                        <h5>STAR WARS</h5>
+                        <h2>LUKE SKYWALKER</h2>
+                        <p class="parrafoDescripcionProducto">➤ Figura coleccionable de Luke SkyeWalker <br> ⋄ Star Wars, edición limitada.</p>
+                        <p id='productCartPrice' class="price"></p>
+                        <div class="botonera">
+                            <button id="restarBoton" class="btnBotonera">-</button>
+                            <input class="inputNumberCart" type="number" value="1">
+                            <button id="sumarBoton" class="btnBotonera">+</button>
+                        </div>
+                        <a target="_blank" href="https://www.mercadopago.com.ar/ayuda/costos-financiacion_621" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
+                        <div class="botones_comprar_eliminar">
+                            <button class="btnComprar">COMPRAR</button>
+                            <button class="eliminar"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="2" class="funkoColeccionContainer funkoContainerCart" style="display:none">
+                    <div class="imagenFunko">
+                        <img class="funkosImgMobile" src="../img/pokemon/pikachu-box.webp" alt="imagen de producto">
+                    </div>
+                    <div class="textoFunkoColeccion textoFunkosCart">
+                        <h5>Pokemon</h5>
+                        <h2>PIKACHU</h2>
+                        <p class="parrafoDescripcionProducto" >➤ Figura coleccionable de Pikachu <br> ⋄ Pokemon, edición limitada.</p>
+                        <p id='productCartPrice2' class="price"></p>
+                        <div class="botonera">
+                            <button id="restarBotonPokemon" class="btnBotonera">-</button>
+                            <input class="inputNumberCartPokemon" type="number" value="1">
+                            <button id="sumarBotonPokemon" class="btnBotonera">+</button>
+                        </div>
+                        <a target="_blank" href="https://www.mercadopago.com.ar/ayuda/costos-financiacion_621" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
+                        <div class="botones_comprar_eliminar">
+                            <button class="btnComprarPokemon">COMPRAR</button>
+                            <button class="eliminarPokemon"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="3" class="funkoColeccionContainer funkoContainerCart" style="display:none">
+                    <div class="imagenFunko">
+                        <img class="funkosImgMobile" src="../img/harry-potter/hermione-box.webp" alt="imagen de producto">
+                    </div>
+                    <div class="textoFunkoColeccion textoFunkosCart">
+                        <h5>Harry Potter</h5>
+                        <h2>HERMIONE GRANGER</h2>
+                        <p class="parrafoDescripcionProducto">➤ Figura coleccionable de Hermione <br> ⋄ Harry Potter, edición limitada.</p>
+                        <p id='productCartPrice3' class="price"></p>
+                        <div class="botonera">
+                            <button id="restarBotonHP" class="btnBotonera">-</button>
+                            <input class="inputNumberCartHP" type="number" value="1">
+                            <button id="sumarBotonHP" class="btnBotonera">+</button>
+                        </div>
+                        <a target="_blank" href="https://www.mercadopago.com.ar/ayuda/costos-financiacion_621" class="metodosDePago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p></a>
+                        <div class="botones_comprar_eliminar">
+                            <button class="btnComprarHP">COMPRAR</button>
+                            <button class="eliminarHP"><img src="../img/icons/papelera.png" alt="boton eliminar"></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+        
+        <span class="carritoVacio">EL CARRITO DE COMPRAS ESTA VACIO</span>
+        <hr>
+        <span class="ultimosLanzamientosSpan">PRODUCTOS RELACIONADOS</span>
+        <section class="ultimosLanzamientos">
+            <div class="slideshow-container">
+    
+                <div class="mySlides fade">
+                    <div class="caracteristica">
+                        <span>NUEVO</span>
+                    </div>
+                    <div class="numbertext">1 / 3</div>
+                    <a class="imgTrooperCartHTML" href=""><img src="../img/star-wars/trooper-1.webp" style="width:100%"></a>
+                    <div class="textoLanzamientosCarta">
+                        <h4 class="claseLanzamientosCarta1">STAR WARS</h4>
+                        <h3 class="nombreLanzamientosCarta1">STORMTROOPER LIGTHSABER</h3>
+                        <p class="precioLanzamientosCarta1">$ 1799,99.-</p>
+                        <p class="cuotas cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="caracteristica">
+                        <span>NUEVO</span>
+                    </div>
+                    <div class="numbertext">2 / 3</div>
+                    <a class="imgPokemontCartHTML" href=""><img  src="../img/pokemon/pidgeotto-1.webp" style="width:100%"></a>
+                    <div class="textoLanzamientosCarta">
+                        <h4 class="claseLanzamientosCarta2">POKEMON</h4>
+                        <h3 class="nombreLanzamientosCarta2">PIDGEOTTO</h3>
+                        <p class="precioLanzamientosCarta2">$ 1799,99.-</p>
+                        <p class="cuotas cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="caracteristica">
+                        <span>NUEVO</span>
+                    </div>
+                    <div class="numbertext">3 / 3</div>
+                    <a class="imgHPCartHTML" href=""><img src="../img/harry-potter/luna-1.webp" style="width:100%"></a>
+                    <div class="textoLanzamientosCarta">
+                        <h4 class="claseLanzamientosCarta3">HARRY POTTER</h4>
+                        <h3 class="nombreLanzamientosCarta3">LUNA LOVEGOOD LION MASK</h3>
+                        <p class="precioLanzamientosCarta3">$ 1799,99.-</p>
+                        <p class="cuotas cuotasLanzamientosCarta">3 CUOTAS SIN INTERES</p>
+                    </div>
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            </div>
+            <br>
+    
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="noStock" style="display: none;">
+            <div class="stockContainer">
+                <button class="btnCloseStock"><img src="../img/icons/close-icon.svg" alt=""></button>
+                <h2>STOCK INSUFICIENTE</h2>
+            </div>
+        </section>
+
+        <section class="comprado" style="display: none;">
+            <div class="compradoContainer">
+                <button class="btnCloseStock btnCloseComprado"><img src="../img/icons/close-icon.svg" alt=""></button>
+                <div class="textoComprado">
+                    <h1>¡GRACIAS POR TU COMPRA!</h1>
+                    <p>En breve te estaremos enviando un mail con la informacion para continuar con tu pago</p>
+                    <p>¡Quedate Tranquilo, tu compra ya esta Reservada !</p>
+                    <p>Si tenes alguna duda podes revisar la seccion de : <a href="./contact.html">Contacto</a></p>
+                    <a  href="./shop.html"><button class="btnSeguirComprando">SEGUIR COMPRANDO</button></a>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <nav class="navFooter">
+                <div class="navLinksFooter">
+                    <ul>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./login.html">REGISTRARSE</a></li>
+                        <li><a href="./login.html">INGRESAR</a></li>
+                        <li><a href="./contact.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+                <div class="logoFooter">
+                    <img src="../img/branding/isotype.svg" alt="">
+                </div>
+            </nav>
+            <p class="copyright">&copy; 2023  Developed with ♥ by Paula Armengol - All rigths reserved </p>
+        </footer>
+    
+        
+        <script src="../js/navBar.js"></script>
+        <script src="../js/slider.js"></script>
+        <script src="../js/shop.js"></script>
+    </body>
+</html>

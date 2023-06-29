@@ -1,0 +1,308 @@
+@media (min-width: 992px) {
+
+    /*ESTILOS PARA EL LOGO DEL NAV EN VERSION DESKTOP*/
+     /* icono del carrito */
+
+    .iconoCart:hover {
+        filter: invert(69%) sepia(63%) saturate(1801%) hue-rotate(335deg) brightness(101%) contrast(99%);
+    }
+
+    .logoNavMobile {
+        display: none;
+    }
+
+    .logoNavDesktop {
+        display: block;
+    }
+
+    .closeMenu {display: none;}
+    
+    .openMenu {display: none;}
+
+    .navLinksUL {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        position: unset;
+        transition: none;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0;
+        z-index: 1;
+    }
+
+    nav li a:hover {
+        color: #ff4848 !important;
+        transition: ease-in-out 0.4s;
+    }
+
+    /*ESTILOS PARA EL BANNER EN VERSION DESKTOP*/
+    .textoBanner a:hover{
+        background-color: #ff4848;
+        color: white;
+        transition: ease-in-out 0.4s;
+    }
+
+    .bannerContainer{
+        position: relative;
+    } 
+
+    .textoBanner{
+        position: absolute;   
+    }
+
+    /*ESTILOS PARA LA SECCION FUNKOS EN VERSION DESKTOP*/
+    .funkoColeccionContainer{
+        flex-direction: row;
+    }
+
+    .funkoColeccionContainer img {
+        height: 260px;
+    }
+
+    /* botones ver coleccion */
+
+    .botonColeccion:hover{
+        background-color: black;
+        color: #ff4848;
+        transition: ease-in-out 0.4s;
+    }
+
+    /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
+
+    .ultimosLanzamientos {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .ultimosLanzamientosSpan{
+        font-size: 1rem;
+    }
+    
+    .envoltorioUltimosLanzamientos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .caracteristica{
+        position: relative
+    }
+
+    .mySlides{
+        display: block !important;
+    }
+    
+    .prev, .next {display: none;}
+
+    .fade {
+        display: block !important;
+    }
+
+    .slideshow-container {
+        display: flex;
+        max-width: 80%;
+    }
+
+    .dot {
+        display: none;
+    }
+
+
+    /*ESTILOS PARA LA SECCION SHOP → BUSCAR*/
+    .contenedorPrincipal{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .search {
+        text-align: initial;
+        padding: 10px;
+        position: absolute;
+    }
+
+   /*  .minMaxInputs {
+        margin: 0px;
+    } */
+    
+    .productosContainer{
+        position: absolute;
+    }
+    .filter{
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+    }
+    
+    .buttonSearch{
+        display: none;
+    }
+
+    .botonesSlider{
+        display: none;
+    }
+
+
+     /* escondemos los numeros q estan arriba a la izquierda en cada card */
+    .numbertext{
+        display: none;
+    }
+
+    /* escondemos las flechas de izquierda y derecha en las cards */
+    .flechaIzq, .flechaDer {
+        display: none ;
+    }
+
+    /********************** ESTILOS PARA LA SECCION CARRITO DE COMPRAS (CART) *******************/
+
+    /* boton de sumar y restar con input en 0 para el carrito */
+    .botonera{
+        display: flex;
+        flex-direction: row !important;
+    
+    }
+
+    .botonera input{
+        width: 26px;
+        height: 17px;
+        text-align: center;
+    }
+
+    .metodosDePago{
+        color: #1D84B5;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .metodosDePago:hover{
+        color: blue;
+    }
+
+    .textoFunkosCart{
+        justify-content: flex-start !important;
+        align-items: baseline !important;
+        text-align: start !important;
+    }
+
+    /* estilos para la seccion de contacto */
+    #container-form{
+        grid-template-columns: repeat(2,1fr);
+        text-align: start;
+    }
+
+    #container-form .btn-enviar:hover{
+        background: black;
+        color: white;
+    }
+
+    #container-form a i:hover{
+        color: black;
+    }
+    
+    #container-form a:hover{
+        color: #ff4848;
+    }
+
+    #container-form{
+        margin-top: 20px;
+        padding: 42px 0px;
+    }
+
+    .info-form{
+        padding: 25px;
+    }
+
+    /* estilo para la seccion de login */
+    .form{
+        width: 300px;
+    }
+
+    .form input[type="submit"]:hover {
+        background-color: black;
+        transition: ease-in-out .4s;
+    }
+
+    .form a:hover{
+        color: #047c71;
+    }
+
+    /*ESTILOS PARA EL FOOTER*/
+    .navFooter{
+    margin: 0px auto;
+    padding: 20px;
+    }
+
+    .navLinksFooter a:hover{
+        color: #ff4848;
+    }
+
+    /* BOTON DE COMPRAR PARA LOGIN.HTML */
+    
+    .btnComprar:hover::before {
+        transform: scaleX(1);
+    }
+
+    .btnComprar:hover, .btnComprarPokemon:hover, .btnComprarHP:hover{
+        background: transparent;
+        color: #dc41df;;
+        transition: 0.4s ease-in-out;
+        border-color: #dc41df;
+    }
+
+    .btnComprar::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .eliminar:hover, .eliminarPokemon:hover, .eliminarHP:hover{
+        background: transparent;
+        color: #dc41df;
+        transition: 0.4s ease-in-out;
+        border-color: #dc41df;
+    }
+
+    .eliminar img:hover , .eliminarPokemon img:hover , .eliminarHP img:hover{
+        filter: invert(48%) sepia(38%) saturate(4276%) hue-rotate(268deg) brightness(85%) contrast(106%);
+        transition: 0.4s ease-in-out;
+    }
+
+    /* BOTON SEGUIR COMPRANDO DEL MENU DESPLEGABLE AL PRESIONAR COMPRAR */
+    .btnSeguirComprando:hover{
+        background: transparent;
+        color: #dc41df;
+        transition: 0.4s ease-in-out;
+        border-color: #dc41df;
+        cursor: pointer;
+    }
+    
+    .btnSeguirComprando:hover::before{
+        transform: scaleX(1);
+    }
+
+    .btnSeguirComprando::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    /* link de contacto dentro del menu seguir comprando */
+    .textoComprado a:hover{
+        color: #dc41df;
+    }
+}

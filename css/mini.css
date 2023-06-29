@@ -1,0 +1,136 @@
+@media (max-width: 568px) {
+    /*ESTILOS PARA EL BANNER EN VERSION MINI MOBILE*/
+    .textoBanner{
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+    }
+
+    .textoBanner a{
+        margin: 0px auto;
+        width: 100px;
+        height: 35px;
+    }
+
+    /*ESTILOS PARA SECCION PRINCIPAL DE FUNKOS EN VERSION MINI MOBILE*/
+
+    .funkoColeccionContainer img{
+        height: 150px;
+    }
+
+    .funkoColeccionContainer a{
+        margin-bottom: 0px;
+        width: 130px;
+        height: 27px;
+        font-size: small;
+    }
+
+    .funkoColeccionContainer{
+        margin: 20px;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .funkosImgMini{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .hidden{
+        display: none !important;
+    }
+
+    .funkoColeccionContainer div{
+        align-items: center;
+        text-align: center;
+    }
+    .textoFunkoColeccion p{
+        padding: 5px;
+    }
+
+    .textoFunkoColeccion h2, .textoFunkoColeccion h5{
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .parrafoDescripcionProducto{
+        display: none;
+    }
+
+    /*ESTILOS PARA LAS CARTAS DE PRODUCTOS */
+    .caracteristica span{
+        font-size: 8px;
+        height: 18px;
+        width: 38px;
+        line-height: 21px;
+    }
+    
+    /*ESTILOS PARA EL FOOTER*/
+    .navFooter {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .navLinksFooter ul{
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .logoFooter img{
+        width: 80%;
+    }
+    
+    /*ESTILOS PAGINA SHOP*/
+
+    /*SECCION BUSCADOR*/
+.search{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSearch{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+    
+.buttonSearch{
+    width: 50%;
+    margin: 10px auto;
+}
+
+#ordenarPor{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.minMaxInputs {
+    margin: 0px;
+}
+
+/* ESTILO PARA EL LOGIN */
+
+.form{
+    width: 65%;
+}
+
+.form h1{
+    font-size: 85%;
+}
+
+.form a{
+    width: auto;
+}
+
+/* estilos para pagina cart.html */
+
+/* botones de comprar y eliminar */
+
+.botones_comprar_eliminar{
+    padding-top: 20px;
+}
+}
