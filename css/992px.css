@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
 
-    /*ESTILOS PARA EL LOGO DEL NAV EN VERSION DESKTOP*/
+    /*LOGO DEL NAV*/
      /* icono del carrito */
 
     .iconoCart:hover {
@@ -36,7 +36,7 @@
         transition: ease-in-out 0.4s;
     }
 
-    /*ESTILOS PARA EL BANNER EN VERSION DESKTOP*/
+    /*BANNER*/
     .textoBanner a:hover{
         background-color: #ff4848;
         color: white;
@@ -51,13 +51,13 @@
         position: absolute;   
     }
 
-    /*ESTILOS PARA LA SECCION FUNKOS EN VERSION DESKTOP*/
+    /*SECCION FUNKOS*/
     .funkoColeccionContainer{
         flex-direction: row;
     }
 
     .funkoColeccionContainer img {
-        height: 260px;
+        height: 260px; 
     }
 
     /* botones ver coleccion */
@@ -68,7 +68,7 @@
         transition: ease-in-out 0.4s;
     }
 
-    /*ESTILOS PARA LA SECCION ULTIMOS LANZAMIENTOS*/
+    /*SECCION ULTIMOS LANZAMIENTOS*/
 
     .ultimosLanzamientos {
         width: 80%;
@@ -76,7 +76,7 @@
     }
 
     .ultimosLanzamientosSpan{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     .envoltorioUltimosLanzamientos{
@@ -108,7 +108,7 @@
     }
 
 
-    /*ESTILOS PARA LA SECCION SHOP → BUSCAR*/
+    /*SECCION SHOP → BUSCAR*/
     .contenedorPrincipal{
         display: grid;
         grid-template-columns: 20% 80%;
@@ -152,7 +152,7 @@
         display: none ;
     }
 
-    /********************** ESTILOS PARA LA SECCION CARRITO DE COMPRAS (CART) *******************/
+    /*-------- ESTILOS PARA LA SECCION CARRITO DE COMPRAS (CART) ----------*/
 
     /* boton de sumar y restar con input en 0 para el carrito */
     .botonera{
@@ -183,7 +183,7 @@
         text-align: start !important;
     }
 
-    /* estilos para la seccion de contacto */
+    /* seccion de contacto */
     #container-form{
         grid-template-columns: repeat(2,1fr);
         text-align: start;
@@ -211,7 +211,7 @@
         padding: 25px;
     }
 
-    /* estilo para la seccion de login */
+    /* seccion de login */
     .form{
         width: 300px;
     }
@@ -225,7 +225,7 @@
         color: #047c71;
     }
 
-    /*ESTILOS PARA EL FOOTER*/
+    /*FOOTER*/
     .navFooter{
     margin: 0px auto;
     padding: 20px;

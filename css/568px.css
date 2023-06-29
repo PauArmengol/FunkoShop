@@ -1,8 +1,9 @@
 @media (max-width: 568px) {
-    /*ESTILOS PARA EL BANNER EN VERSION MINI MOBILE*/
+    /*BANNER*/
     .textoBanner{
         top: 30px;
         left: 50%;
+        margin: 0;
         transform: translate(-50%, 50%);
         text-align: center;
     }
@@ -13,7 +14,12 @@
         height: 35px;
     }
 
-    /*ESTILOS PARA SECCION PRINCIPAL DE FUNKOS EN VERSION MINI MOBILE*/
+    .logoNav img{
+        height: 50px;  
+     }
+
+
+    /*SECCION PRINCIPAL DE FUNKOS*/
 
     .funkoColeccionContainer img{
         height: 150px;
@@ -60,7 +66,7 @@
         display: none;
     }
 
-    /*ESTILOS PARA LAS CARTAS DE PRODUCTOS */
+    /*CARTAS DE PRODUCTOS */
     .caracteristica span{
         font-size: 8px;
         height: 18px;
@@ -68,7 +74,7 @@
         line-height: 21px;
     }
     
-    /*ESTILOS PARA EL FOOTER*/
+    /*FOOTER*/
     .navFooter {
         justify-content: center;
         text-align: center;
@@ -84,7 +90,7 @@
         width: 80%;
     }
     
-    /*ESTILOS PAGINA SHOP*/
+    /*--- ESTILOS PAGINA SHOP ---*/
 
     /*SECCION BUSCADOR*/
 .search{
@@ -112,7 +118,7 @@
     margin: 0px;
 }
 
-/* ESTILO PARA EL LOGIN */
+/*LOGIN */
 
 .form{
     width: 65%;
@@ -126,7 +132,7 @@
     width: auto;
 }
 
-/* estilos para pagina cart.html */
+/* pagina cart.html */
 
 /* botones de comprar y eliminar */
 

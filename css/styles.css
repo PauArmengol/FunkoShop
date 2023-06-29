@@ -1,5 +1,6 @@
-@import url(./mini.css);
-@import url(./desktop.css);
+@import url(./568px.css);
+@import url(./569px-768px.css);
+@import url(./992px.css);
 
 html {
     min-height: 100vh;
@@ -42,7 +43,7 @@ header {
 }
 
 .logoNav img{
-    height: 50px; 
+    height: 50px;  
 }
 
 .navLinksUL{
@@ -123,9 +124,8 @@ nav li a{
 
 .textoBanner{
     position: absolute;
-    margin-top: 20px;
-    /* margin-top: 30px; 
-    margin-left: 30px; */
+    margin-left: 50px;
+    margin-bottom: 30px;
     padding: 20px; 
     color: white;
 }
@@ -140,7 +140,6 @@ nav li a{
 .textoBanner p {
     font-family: Roboto, sans-serif;
     font-size: 1.3rem;
-    text-shadow: 1px 1px 2px white;
 }
 
 .textoBanner a{
@@ -162,6 +161,7 @@ nav li a{
 /*ESTILOS PARA SECCION PRINCIPAL DE FUNKOS*/
 .funkosImgMini{
     display: none;
+    width: 150px;
 }
 
 .hr {
@@ -181,7 +181,7 @@ nav li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .textoFunkoColeccion h2 {
@@ -245,11 +245,11 @@ nav li a{
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    width: 180px;
+    width: 160px;
     position: absolute;
     height: 40px;
     display: flex;
-    font-size: medium;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
     margin-bottom: -40px;
@@ -265,6 +265,7 @@ nav li a{
     flex-direction: column;
     justify-content: end;
     align-items: baseline;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
@@ -319,7 +320,7 @@ hr {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     word-break: break-word;
     margin: 20px;
 }
@@ -335,6 +336,7 @@ hr {
     right: 0px;
     line-height: 30px;
     top: 0px;
+    border-radius: 6px;
 }
 
 .mySlides {
@@ -497,14 +499,13 @@ footer p{
     text-align: center; */
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-left: 20px;
     
 }
 
 .search p{
     font-family: Roboto, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     text-align: left;
     
@@ -539,11 +540,15 @@ footer p{
     padding: 2px 12px;
 }
 
+.priceContainer {
+    margin-top: 20px;
+}
+
 .minMaxInputs {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .minMaxInputs input{
@@ -553,6 +558,7 @@ footer p{
 
 .filter{
     display: none;
+    font-size: .7em;
 }
 
 /* ESTILOS PARA LA PAGINA LOGIN */
