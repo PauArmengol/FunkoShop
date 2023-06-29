@@ -57,6 +57,7 @@ const btnCloseStock = document.querySelector('.btnCloseStock');
 
 // input search en shop.html
 const inputSearch = document.querySelector('.inputSearch');
+
 // boton search en shop.html
 const btnSearch = document.querySelector('.buttonSearch');
 
@@ -87,25 +88,25 @@ function parse_query_string(query) {
 const productList = [];
 productList.push({
     tag: 'Star Wars',
-    name: 'LUKE SKYWALKER',
-    price: 20000,
-    img: '../img/star-wars/luke-1.webp',
+    name: 'STORMTROOPER LIGTHSABER',
+    price: 15000,
+    img: '../img/star-wars/trooper-1.webp',
     id: 1,
     description: '3 CUOTAS SIN INTERES'
 });
 productList.push({
     tag: 'Pokemon',
-    name: 'PIKACHU',
-    price: 18500,
-    img: '../img/pokemon/pikachu-1.webp',
+    name: 'PIDGEOTTO',
+    price: 17000,
+    img: '../img/pokemon/pidgeotto-1.webp',
     id: 2,
     description: '3 CUOTAS SIN INTERES'
 });
 productList.push({
     tag: 'Harry Potter',
-    name: 'HERMIONE GRANGER',
+    name: 'LUNA LOVEGOOD LION MASK',
     price: 19000,
-    img: '../img/harry-potter/hermione-1.webp',
+    img: '../img/harry-potter/luna-1.webp',
     id: 3,
     description: '3 CUOTAS SIN INTERES'
 });

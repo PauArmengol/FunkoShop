@@ -19,24 +19,31 @@
     <link rel="stylesheet" href="../css/992px.css">
     <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <title>Funkoshop</title>
-    <link rel="icon" href="#" type="image/png" />
+    <link rel="icon" href="../img/branding/isotype.svg" type="image/png" />
 </head>
 
 <body>
 
-    <header class="header_container">
-        <div class="logo">
-            <a href="../index.html" id="logo_nav"><img src="../img/branding/logo_light_horizontal.svg" alt="logo"></a>
+    <header>
+        <div class="envoltorioNav">
+            <div class="logoNav">
+                <a class="logoNavMobile" href="./index.html"><img src="./img/branding/isotype.svg" alt="Logo FunkoShop" class="hola"></a>
+                <a href="./index.html" class="logoNavDesktop"><img src="./img/branding/logo_light_horizontal.svg" alt="Logo FunkoShop"></a>
+            </div>
+            
+            <nav>
+                <button class="openMenu"><img src="./img/icons/menu.png" alt=""></button>
+                <ul class="navLinksUL inactive menuAbierto">
+                    <button class="closeMenu"><img src="./img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="./pages/shop.html">Shop</li></a>
+                    <li><a href="./pages/contact.html">Contacto</li></a>
+                    <li><a href="./pages/login.html">Login</li></a>
+                    <a class="iconoCart" href="./pages/cart.html"><img src="./img/icons/cart-icon.svg" alt="carrito"></a>
+                </ul>
+            </nav>
         </div>
-        <div class="group">
-            <ul>
-                <li><a href="#" target="_blank" id="#">SHOP</a></li>
-                <li><a href="#" target="_blank" id="#">CONTACTO</a></li>
-                <li><a href="#" target="_blank" id="#">LOGIN</a></li>
-                <li><a href="#" target="_blank" id="#"><img src="../img/icons/cart-icon.svg" alt="carrito"></a></li>
-            </ul>
-        </div>      
-    </header>
+    </header> 
+
 
     <section>
         <div>
@@ -137,10 +144,9 @@
         <div class="container_footer">
             <div class="footer_links">
                 <ul>
-                    <li><a href="#" target="_blank" id="#">SHOP</a></li>
-                    <li><a href="#" target="_blank" id="#">REGISTRARSE</a></li>
-                    <li><a href="#" target="_blank" id="#">INGRESAR</a></li>
-                    <li><a href="#" target="_blank" id="#">CONTACTO</a></li>
+                    <li><a href="./shop.html" target="_blank" id="#">SHOP</a></li>
+                    <li><a href="./login.html" target="_blank" id="#">INGRESAR</a></li>
+                    <li><a href="./contact.html" target="_blank" id="#">CONTACTO</a></li>
                 </ul>
             </div>
             <div>
