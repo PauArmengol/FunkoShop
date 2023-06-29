@@ -632,10 +632,10 @@ h1 {
 }
 
 
-/* ESTILOS PARA LA SECCION DE CONTACTO */
+/*SECCION DE CONTACTO */
 
 #container-form{
-    width: 100%;
+    width: 90%;
     max-width: 1100px;
     margin: auto;
     display: grid;
@@ -647,12 +647,7 @@ h1 {
 #container-form h2{
     margin-bottom: 15px;
     font-size: 35px;
-    text-decoration: underline;
-}
-
-#container-form h3{
-    font-weight: normal;
-    color: #ff4848;
+    text-shadow: 1px 1px 2px grey;
 }
 
 #container-form a{
@@ -660,7 +655,7 @@ h1 {
     display: inline-block;
     text-decoration: none;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: black;
     font-weight: 700;
 }
@@ -675,30 +670,31 @@ h1 {
     width: 90%;
     padding: 15px 10px;
     font-size: 16px;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 6px;
     outline: 0px;
 }
 
 #container-form textarea{
     width: 90%;
-    height: 270px;
+    height: 200px;
     padding: 15px 10px;
     font-size: 16px;
-    border: 1px solid #dbdbdb;
-    margin-bottom: 20px;
-    border-radius: 3px;
+    border: 1px solid rgb(73, 73, 73);
+    margin-bottom: 15px;
+    border-radius: 6px;
     outline: 0px;
+    resize: none;
 }
 
 #container-form .btn-enviar{
-    padding: 15px;
+    padding: 20px;
     font-size: 16px;
     border: none;
     outline: 0px;
     background: #ff4848;
     color: white;
-    border-radius: 3px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 300ms ease;
 }
@@ -722,6 +718,45 @@ h1 {
     color: #ff4848;
     font-size: 0.8rem;
 }
+
+
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info-redes {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-redes h6 {
+    font-family: Satoshi, sans-serif;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px grey;
+    margin-right: 16px;
+}
+
+.info-map {
+    border: 1px solid #ff4848;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* seccion stock insuficiente en cart.html */
@@ -755,6 +790,7 @@ h1 {
     background: #101010;
     cursor: pointer;
 }
+
 
 /* seccion producto comprado cart.html */
 .comprado{
