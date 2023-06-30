@@ -1,5 +1,4 @@
 @import url(./568px.css);
-@import url(./569px-768px.css);
 @import url(./992px.css);
 
 html {
@@ -216,13 +215,15 @@ nav li a{
     height: 40px;
     width: 40px;
     background: transparent;
-    border: 1px solid #ff4848;
+    border: 1px solid #313131;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
 }
 
 .eliminar img, .eliminarPokemon img, .eliminarHP img{
     height: 38px !important;
+    
 }
 
 /* boton comprar en pagina cart (carrito de compras) */
@@ -236,6 +237,7 @@ nav li a{
     letter-spacing: 2px;
     border: 0.9px solid red;
     margin-right: 20px;
+    border-radius: 6px;
 }
 
 /* botones ver coleccion */
@@ -353,7 +355,7 @@ img {
 }
 
 .cuotas{
-    color: #1D84B5;
+    color: #027fb9;
 }
 
 /* Slideshow container */
@@ -734,6 +736,8 @@ h1 {
     text-align: start;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 .info-redes h6 {
@@ -741,6 +745,7 @@ h1 {
     font-size: 1.5em;
     text-shadow: 1px 1px 2px grey;
     margin-right: 16px;
+    margin-top: 35px;
 }
 
 .info-map {
